@@ -17,7 +17,7 @@ body{
 .item{
     /* background: lightblue; */
     /* padding: 10px; */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .header{
     /* background-color: red; */
@@ -28,6 +28,8 @@ body{
     justify-content: space-between;
     align-content: center;
     grid-area: header;
+    background-color: white;
+    z-index: 1;
     
     
     -webkit-box-shadow: 0px 9px 9px -6px rgba(0,0,0,0.15);
@@ -92,10 +94,12 @@ text-align:center;
 padding: 40px 0 0 0;
 /* display: flex; */
 
+
 }
 .menu span{
     margin-top:40px; 
     display: block;
+    
 }
 .menu .icon-home{
     margin-top: 0px;
@@ -105,11 +109,64 @@ padding: 40px 0 0 0;
     margin: 0;
 }
 .menu .icon-cog{
-    margin-top: 200%;
+    margin-top: 230%;
     
     
 }
 .contenido{
+    height: 100vh;
 grid-area: contenido;
-color:aqua; 
+font-size: 20px;
+border: 1px solid red;
+color:Black; 
+font-weight: bold;
+display: grid;
+grid-template: 70px 1fr 70px 1fr  / repeat(4, 1fr);
+}
+.explicacion{
+    align-content: flex-end;
+    padding-top: 40px; 
+    padding-left: 55px;
+}
+.pelicula{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+     
+    
+}
+
+.pelicula img{
+    height:390px;
+    
+}
+.imgContainer{
+    position: relative;
+    
+}
+.superpuesto{
+    color: white;
+    bottom: 50px;
+    
+    position: absolute;
+    width: 260.13px;
+    height: fit-content;
+    background-color: rgba(246, 64, 64, 0.5);
+    
+    
+}
+.superpuesto .titulo{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    }
+.superpuesto .descripcion{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    
+}
+.fix{
+    background: blue;
+    
 }
